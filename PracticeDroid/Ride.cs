@@ -7,8 +7,8 @@ using Android.Widget;
 using Android.OS;
 
 namespace PracticeDroid {
-    [Activity(Label = "PracticeDroid", MainLauncher = true, Icon = "@drawable/picycle")]
-    public class MainActivity : Activity {
+    [Activity(Label = "PracticeDroid", Icon = "@drawable/picycle")]
+    public class Ride : Activity {
 
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
@@ -16,7 +16,7 @@ namespace PracticeDroid {
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            Button rideButton = FindViewById<Button>(Resource.Id.rideButton);
+            //Button button = FindViewById<Button>(Resource.Id.);
 
         }
     }
