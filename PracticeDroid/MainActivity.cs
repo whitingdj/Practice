@@ -18,6 +18,12 @@ namespace PracticeDroid {
 
             Button rideButton = FindViewById<Button>(Resource.Id.rideButton);
 
+            rideButton.Click += RideButton_Click;
+
+        }
+
+        private void RideButton_Click(object sender, EventArgs e) {
+            SetContentView(Resource.Layout.Ride);
         }
     }
 }
